@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { faPhone, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import phonetwo from "../assets/icons8-phone.svg";
+import fb from "../assets/icons8-facebook.svg";
+import globe from "../assets/icons8-globe.png";
 const PageFooter = styled.footer`
   display: flex;
   justify-content: space-evenly;
@@ -21,7 +21,9 @@ const PageFooter = styled.footer`
 
 const iconStyle = {
   marginRight: "5px",
-  height: "20px",
+  height: "25px",
+  background: "white",
+  borderRadius: "30%",
 };
 
 const FooterItem = styled.span`
@@ -43,19 +45,18 @@ const Footer = () => {
       </div>
       <PageFooter>
         <FooterItem>
-          <FontAwesomeIcon icon={faPhone} style={iconStyle} /> Toll free &nbsp;
+          <img src={phonetwo} alt="" style={iconStyle} />
+          Toll free &#160;
           <b>1800 200 1234</b>
         </FooterItem>
         <FooterItem>
-          {" "}
-          <FontAwesomeIcon icon={faFacebook} style={iconStyle} />
+          <img src={fb} alt="" style={iconStyle} />
           <a href="https://www.facebook.com/cripumps" target="_blank">
             www.facebook.com/cripumps
           </a>
         </FooterItem>
         <FooterItem>
-          <FontAwesomeIcon icon={faGlobe} style={iconStyle} />
-
+          <img src={globe} alt="" style={iconStyle} />
           <a href="https://www.crigroups.com" target="_blank">
             www.crigroups.com
           </a>
