@@ -6,12 +6,21 @@ const Container = styled.header`
   align-items: center;
   justify-content: center;
   margin: 0;
+  img {
+    height: 110px;
+    width: auto;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      height: 90px;
+    }
+  }
 `;
 
 const Header = () => {
   return (
     <Container>
-      <img src={logo} alt="Logo" style={{ height: "100px", width: "350px" }} />
+      <img src={logo} alt="Logo" />
     </Container>
   );
 };

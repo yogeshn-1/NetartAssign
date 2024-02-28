@@ -22,7 +22,7 @@ const Caption = styled.figcaption`
     font-size: medium;
   }
 `;
-const ProdTitle = styled.h4`
+const ProdTitle = styled.p`
   text-align: center;
   @media screen and (max-width: 680px) {
     font-size: small;
@@ -41,6 +41,9 @@ const Products = () => {
         Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
         Solar Systems - Motors
       </Caption>
+      <hr
+        style={{ border: "1px solid red", width: "98%", margin: "1rem auto 0" }}
+      />
     </Container>
   );
 };
