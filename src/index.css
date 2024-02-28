@@ -1,3 +1,18 @@
 #root {
-  background: #fff;
+  background: linear-gradient(#fffffb, #fff9bc);
+  height: 100%;
+  overflow: auto;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+* {
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    line-height: 1.2;
+  }
 }
